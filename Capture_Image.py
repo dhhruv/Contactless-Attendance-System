@@ -2,6 +2,7 @@ import csv
 
 import cv2
 import os
+#from main_gui import tkEmail, tkID, tkName
 
 
 # counting the numbers
@@ -27,12 +28,13 @@ def is_number(s):
 
 # Take image function
 
-def takeImages():
+def takeImages(Id,name,email):
 
 
-    Id = input("Enter Your Id: ")
-    name = input("Enter Your Name: ")
-    email = input("Enter Your emailid: ")
+    #Id = str(tkID)
+    #name = str(tkName)
+    #email = str(tkEmail)
+    print(Id,name,email)
     
     if(is_number(Id) and name.isalpha()):
         cam = cv2.VideoCapture(0)

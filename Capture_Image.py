@@ -1,8 +1,6 @@
 import csv
-
 import cv2
 import os
-#from main_gui import tkEmail, tkID, tkName
 
 
 # counting the numbers
@@ -36,7 +34,7 @@ def takeImages(Id,name,email):
     #email = str(tkEmail)
     print(Id,name,email)
     
-    if(is_number(Id) and name.isalpha()):
+    if(is_number(Id)):
         cam = cv2.VideoCapture(0)
         harcascadePath = "haarcascade_frontalface_default.xml"
         detector = cv2.CascadeClassifier(harcascadePath)
@@ -73,7 +71,5 @@ def takeImages(Id,name,email):
     else:
         if(is_number(Id)):
             print("Enter Alphabetical Name")
-        if(name.isalpha()):
-            print("Enter Numeric ID")
         
 

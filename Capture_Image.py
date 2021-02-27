@@ -63,6 +63,7 @@ def takeImages(Id,name,email):
                 break
         cam.release()
         cv2.destroyAllWindows()
+        temp=''.join(list(i for i in name.split()))
         res = "Images Saved for ID : " + Id + " Name : " + name + "Email :" + email 
         row = [Id, name,email]
         with open("StudentDetails"+os.sep+"StudentDetails.csv", 'a+') as csvFile:

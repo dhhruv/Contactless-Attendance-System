@@ -70,6 +70,8 @@ btn1 = tk.Button(
     fg='#ffffff',
     bd=2,
     relief=tk.FLAT,
+    activebackground = "Green",
+    activeforeground = "White",
     )
 btn1.grid(
     padx=15,
@@ -176,6 +178,8 @@ btn2 = tk.Button(
     fg='#ffffff',
     bd=2,
     relief=tk.FLAT,
+    activebackground = "Green",
+    activeforeground = "White",
     )
 btn2.grid(
     padx=15,
@@ -198,6 +202,8 @@ btn3 = tk.Button(
     fg='#ffffff',
     bd=2,
     relief=tk.FLAT,
+    activebackground = "Green",
+    activeforeground = "White",
     )
 btn3.grid(
     padx=15,
@@ -220,6 +226,8 @@ btn4 = tk.Button(
     fg='#ffffff',
     bd=2,
     relief=tk.FLAT,
+    activebackground = "Green",
+    activeforeground = "White",
     )
 btn4.grid(
     padx=15,
@@ -242,6 +250,8 @@ btn5 = tk.Button(
     fg='#ffffff',
     bd=2,
     relief=tk.FLAT,
+    activebackground = "Green",
+    activeforeground = "White",
     )
 btn5.grid(
     padx=15,
@@ -264,6 +274,8 @@ btn6 = tk.Button(
     fg='#ffffff',
     bd=2,
     relief=tk.FLAT,
+    activebackground = "Green",
+    activeforeground = "White",
     )
 btn6.grid(
     padx=15,

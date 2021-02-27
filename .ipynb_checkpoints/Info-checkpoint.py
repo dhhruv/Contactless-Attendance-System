@@ -1,2 +1,0 @@
-EMAIL_ID = ''
-PASSWORD = ''

@@ -11,7 +11,7 @@ os.chdir(path)
 files = sorted(os.listdir(os.getcwd()), key=os.path.getmtime)
 # receiver = 'neelcshah1012@gmail.com'
 # receiver = 'payaldevalia1111@gmail.com'
-df = pd.read_csv(r'C:\Users\neel\Desktop\FRAS (1)\FRAS\StudentDetails\StudentDetails.csv')   #ama check kari lejo ke path set che ne
+df = pd.read_csv(r'EmployeeDetails\EmployeeDetails.csv')   
         
 receivers = df["email"]
 newest = files[-1]

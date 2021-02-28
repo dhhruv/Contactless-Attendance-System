@@ -1,6 +1,6 @@
 # Contactless-Attendance-System
 
-**Recognize The faces And Take Automatic Attandance.** :sparkles:
+**A Contactless Attendance System where your face is identified for Attendance.** :sparkles:
 
 
 ![Contactless-Attendance-System](https://github.com/dhhruv/Contactless-Attendance-System/blob/master/Git%20Images/Contactless%20Attendance%20System%20Logo.png)

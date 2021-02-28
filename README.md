@@ -41,6 +41,9 @@ We seek to provide a valuable attendance service for employees. Reduce manual pr
 
 ![Checking Camera](https://github.com/dhhruv/Git-Images/blob/master/Check%20Camera.jpg)
 
+### Recognize Image
+
+![Recognizie Image](https://github.com/dhhruv/Git-Images/blob/master/Recognize%20Image.jpg)
 
 ### Automail 
 
@@ -49,12 +52,11 @@ We seek to provide a valuable attendance service for employees. Reduce manual pr
 
 ## Tech Stack Used :computer:
 --------------------------
-Build With - 
+**Build With -** 
 * Python 3.8
 
-Modules Used -
+**Modules Used -**
 
-All The Module are Latest Version.
 * OpenCV Contrib
 * Pillow
 * Numpy
@@ -64,11 +66,11 @@ All The Module are Latest Version.
 * yagmail
 * Tkinter
 
-Facial Recognition Algorithms -
+**Facial Recognition Algorithms -**
 * Haar Cascade
 * LBPH (Local Binary Pattern Histogram)
 
-Softwares Used -
+**Softwares Used -**
 * Pycharm 2019.2
 * VS CODE 
 * Jupyter Notebook
@@ -78,11 +80,11 @@ Softwares Used -
 -----------------------------------
 
 #### Create Environment 
-First open the terminal or command line in the IDE.Then write the following code.
+First open the terminal or command line in the IDE and copy the following code.
 ```
 python -m venv venv
 ```
-Then activate the enviroment using the code below for windows.
+Then activate the virtual enviroment using the code below for windows.
 ```
 .\venv\Scripts\activate
 ```
@@ -91,7 +93,7 @@ Then activate the enviroment using the code below for windows.
 #### Installing the Packages
 --------------------------------------------------
 
-After creating the enviroment on your project let's install the necessary packages. 
+After creating the enviroment on your project, let's install the necessary packages. 
 
 To install those package open the terminal or command line and paste the code from below:
 

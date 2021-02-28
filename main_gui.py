@@ -47,6 +47,12 @@ def cfaces_call():
 	Capture_Image.takeImages(str(tkID.get()),str(tkName.get()),str(tkEmail.get()))
 	tkStatus.set("Faces Captured...")
 	status_label.update()
+	tkID.set("")
+	tkID.update()
+	tkName.set("")
+	tkName.update()
+	tkEmail.set("")
+	tkEmail.update()
 
 def CaptureFaces():
 	t2=threading.Thread(target=cfaces_call,daemon=True)

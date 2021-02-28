@@ -5,7 +5,7 @@
 ![Face Recognition Logo](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/Face-Recognition-Attendance-System-Logo.jpg)
 
 
-![GitHub](https://img.shields.io/github/license/kmhmubin/Face-Recognition-Attendance-System)
+![Made with Python](http://ForTheBadge.com/images/badges/made-with-python.svg)
 
 ## Motivation :astonished:
 ----------------------------

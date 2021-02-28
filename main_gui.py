@@ -15,38 +15,71 @@ import threading
 # ---------------------------------------------------------
 # calling the camera test function from check camera.py file
 
-def checkCamera():
-    t1=threading.Thread(target=check_camera.camer,daemon=True)
-    t1.start()
+def cc_call():
+	tkStatus.set("Accessing Camera...")
+	status_label.update()
+	check_camera.camer()
+	tkStatus.set("")
+	status_label.update()
 
+def checkCamera():
+	t1=threading.Thread(target=cc_call,daemon=True)
+	t1.start()
+	
+def autom_call():
+	tkStatus.set("Sending Mail...")
+	status_label.update()
+	os.system("py automail.py")
+	tkStatus.set("Mail Sent...")
+	status_label.update()
 
 def autom():
-    t5=threading.Thread(target=os.system("py automail.py"),daemon=True)
-    t5.start()
+	t5=threading.Thread(target=autom_call,daemon=True)
+	t5.start()
 
 
 # --------------------------------------------------------------
 # calling the take image function form capture image.py file
 
-def CaptureFaces():
-    t2=threading.Thread(target=Capture_Image.takeImages(str(tkID.get()),str(tkName.get()),str(tkEmail.get())),daemon=True)
-    t2.start()
+def cfaces_call():
+	tkStatus.set("Capturing Faces...")
+	status_label.update()
+	Capture_Image.takeImages(str(tkID.get()),str(tkName.get()),str(tkEmail.get()))
+	tkStatus.set("Faces Captured...")
+	status_label.update()
 
+def CaptureFaces():
+	t2=threading.Thread(target=cfaces_call,daemon=True)
+	t2.start()
 
 # -----------------------------------------------------------------
 # calling the train images from train_images.py file
 
+def timages_call():
+	tkStatus.set("Training Images...")
+	status_label.update()
+	Train_Image.TrainImages()
+	tkStatus.set("Images Trained...")
+	status_label.update()
+
 def Trainimages():
-    t3=threading.Thread(target=Train_Image.TrainImages,daemon=True)
-    t3.start()
+	t3=threading.Thread(target=timages_call,daemon=True)
+	t3.start()
+	
 
 
 # --------------------------------------------------------------------
 # calling the recognize_attendance from recognize.py file
+def rfaces_call():
+	tkStatus.set("Recognizing Faces...")
+	status_label.update()
+	Recognize.recognize_attendence()
+	tkStatus.set("Faces Recognized...")
+	status_label.update()
 
 def RecognizeFaces():
-    t4=threading.Thread(target=Recognize.recognize_attendence,daemon=True)
-    t4.start()
+	t4=threading.Thread(target=rfaces_call,daemon=True)
+	t4.start()
 
 
 # ---------------main driver ------------------
@@ -55,7 +88,8 @@ root = Tk()
 root.title("Contactless Attendance System")
 tkID = tk.StringVar()
 tkName = tk.StringVar()
-tkEmail = tk.StringVar()        
+tkEmail = tk.StringVar()  
+tkStatus = tk.StringVar()      
  
 # Open window having dimension 100x100
 #root.geometry('100x100') 
@@ -284,6 +318,26 @@ btn6.grid(
     ipadx=24,
     ipady=6,
     row=8,
+    column=0,
+    columnspan=4,
+    sticky=tk.W + tk.E + tk.N + tk.S,
+    )
+
+status_label = tk.Label(
+    root,
+    textvariable=tkStatus,
+    bg='#eeeeee',
+    anchor=tk.W,
+    justify=tk.LEFT,
+    relief=tk.FLAT,
+    wraplength=350,
+    )
+status_label.grid(
+    padx=12,
+    pady=(0, 12),
+    ipadx=0,
+    ipady=1,
+    row=9,
     column=0,
     columnspan=4,
     sticky=tk.W + tk.E + tk.N + tk.S,

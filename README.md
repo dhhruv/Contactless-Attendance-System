@@ -27,7 +27,7 @@ We seek to provide a valuable attendance service for employees. Reduce manual pr
 -----------------------------------
 ### Command Line Interface
 
-![Command Line Interdace](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/CODE%20INTERFACE.png)
+![Command Line Interface](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/CODE%20INTERFACE.png)
 
 ### Checking Camera
 

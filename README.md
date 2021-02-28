@@ -88,7 +88,7 @@ Then activate the virtual enviroment using the code below for windows.
 ```
 .\venv\Scripts\activate
 ```
-> Notice: If your pc don't have virtual enviroment or pip install the follow this link. [How to create Virtual Enviroment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) 
+> Note: If your pc don't have virtual enviroment or pip install the follow this link. [How to create Virtual Enviroment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) 
 
 #### Installing the Packages
 --------------------------------------------------

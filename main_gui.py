@@ -48,11 +48,11 @@ def cfaces_call():
 	tkStatus.set("Faces Captured...")
 	status_label.update()
 	tkID.set("")
-	tkID.update()
+	id_label.update()
 	tkName.set("")
-	tkName.update()
+	name_label.update()
 	tkEmail.set("")
-	tkEmail.update()
+	email_label.update()
 
 def CaptureFaces():
 	t2=threading.Thread(target=cfaces_call,daemon=True)

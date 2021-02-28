@@ -79,7 +79,7 @@
 ## Installation :key:
 -----------------------------------
 
-**- Create Environment** 
+### Create Environment 
 First open the terminal or command line in the IDE and copy the following code.
 ```
 python -m venv venv
@@ -90,7 +90,7 @@ Then activate the virtual enviroment using the code below for windows.
 ```
 > Note: If your pc don't have virtual enviroment or pip install the follow this link. [How to create Virtual Enviroment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) 
 
-#### Installing the Packages
+### Installing the Packages
 --------------------------------------------------
 
 After creating the enviroment on your project, let's install the necessary packages. 

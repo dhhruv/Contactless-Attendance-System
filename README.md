@@ -2,8 +2,7 @@
 
 ### Recognize The faces And Take Automatic Attandance. :sparkles:
 
-![Face Recognition Logo](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/Face-Recognition-Attendance-System-Logo.jpg)
-
+![Contactless-Attendance-System](https://github.com/dhhruv/Contactless-Attendance-System/blob/master/Git%20Images/Contactless%20Attendance%20System%20Logo.png)
 
 ![Made with Python](http://ForTheBadge.com/images/badges/made-with-python.svg)
 

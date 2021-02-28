@@ -1,15 +1,19 @@
 # Contactless-Attendance-System
 
-### Recognize The faces And Take Automatic Attandance. :sparkles:
+**Recognize The faces And Take Automatic Attandance.** :sparkles:
+
 
 ![Contactless-Attendance-System](https://github.com/dhhruv/Contactless-Attendance-System/blob/master/Git%20Images/Contactless%20Attendance%20System%20Logo.png)
 
+
 ![Made with Python](http://ForTheBadge.com/images/badges/made-with-python.svg)
+
 
 ## Motivation :astonished:
 ----------------------------
 This Repository was created as a part of MINeD Hackathon, a national level hackathon organized by Centre of Excellence in Data Science at the CSE Department of Nirma University.
-We seek to provide a valuable attendance service for both teachers and students. Reduce manual process errors by provide automated and a reliable attendance system uses face recognition technology.
+
+We seek to provide a valuable attendance service for employees. Reduce manual process errors by provide automated and a reliable attendance system uses facial recognition technology.
 
 ## Features :clipboard:
 ---------------------------
@@ -42,13 +46,14 @@ Build With -
 Modules Used -
 
 All The Module are Latest Version.
-* OpenCV Contrib 4.0.1
+* OpenCV Contrib
 * Pillow
 * Numpy
 * Pandas
 * Shutil
 * CSV
 * yagmail
+* Tkinter
 
 Facial Recognition Algorithms -
 * Haar Cascade
@@ -63,25 +68,7 @@ Softwares Used -
 ## Installation :key:
 -----------------------------------
 
-#### Download or Clone the project
-
-First Download or Clone the Project on Your Local Machine. To download the project from GitHub press **Download Zip**
-
-![Download Zip](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/download%20zip.png)
-
-or 
-
-You can clone the project with git bash.To clone the project using git bash first open the git bash and write the following code
-```
-git clone https://github.com/kmhmubin/Face-Recognition-Attendance-System.git
-```
-demo 
-
-![Git clone](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/git%20clone_edit_0.gif)
-
-After download, Open the project using **Pycharm or VSCODE**. Then we have to create an python enviroment to run the program.
-
-#### create enviroment 
+#### Create Environment 
 First open the terminal or command line in the IDE.Then write the following code.
 ```
 python -m venv venv
@@ -90,16 +77,16 @@ Then activate the enviroment using the code below for windows.
 ```
 .\venv\Scripts\activate
 ```
-[ *Notice:*
+> **Notice:**
 If your pc don't have virtual enviroment or pip install the follow this link.
-[How to create Virtual Enviroment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) ]
+[How to create Virtual Enviroment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) 
 
-#### Installing the packages
+#### Installing the Packages
 --------------------------------------------------
 
 After creating the enviroment on your project let's install the necessary packages. 
 
-![pip isntall demo](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/pip%20install_edit_0.gif)
+![pip install demo](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/pip%20install_edit_0.gif)
 
 To install those package open the terminal or command line and paste the code from below
 

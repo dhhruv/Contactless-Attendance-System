@@ -51,7 +51,8 @@ def RecognizeFaces():
 
 # ---------------main driver ------------------
 # create a tkinter window
-root = Tk()      
+root = Tk()  
+root.title("Contactless Attendance System")
 tkID = tk.StringVar()
 tkName = tk.StringVar()
 tkEmail = tk.StringVar()        

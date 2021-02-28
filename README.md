@@ -9,6 +9,10 @@
 ![Made with Python](http://ForTheBadge.com/images/badges/made-with-python.svg)
 
 
+![](https://badgen.net/badge/icon/terminal?icon=terminal&label)
+![](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)
+
+
 ## Motivation :astonished:
 ----------------------------
 This Repository was created as a part of MINeD Hackathon, a national level hackathon organized by Centre of Excellence in Data Science at the CSE Department of Nirma University.

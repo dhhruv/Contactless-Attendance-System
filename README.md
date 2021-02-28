@@ -78,9 +78,7 @@ Then activate the enviroment using the code below for windows.
 ```
 .\venv\Scripts\activate
 ```
-> **Notice:**
-If your pc don't have virtual enviroment or pip install the follow this link.
-[How to create Virtual Enviroment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) 
+> Notice: If your pc don't have virtual enviroment or pip install the follow this link. [How to create Virtual Enviroment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) 
 
 #### Installing the Packages
 --------------------------------------------------
@@ -95,7 +93,7 @@ To install those package open the terminal or command line and paste the code fr
 pip install -r requirements.txt
 ```
 
-[ **Note: During the package installation, sometimes it shows errors due to package dependencies and to avoid those error you can install those packages as admin.** ]
+> Note: During the package installation, sometimes it shows errors due to package dependencies and to avoid those error you can install those packages as admin.** 
 
 ## Test Run :bicyclist:
 -----------------------
@@ -110,7 +108,6 @@ py main.py
 ```
 py main_gui.py
 ```
-Here is a demo to run the program. I'm Using the Pycharm IDE in my demo.
 
 ![Test Run](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/code%20demo_edit_0.gif)
 

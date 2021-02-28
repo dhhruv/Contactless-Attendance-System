@@ -93,9 +93,7 @@ Then activate the enviroment using the code below for windows.
 
 After creating the enviroment on your project let's install the necessary packages. 
 
-![pip install demo](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/pip%20install_edit_0.gif)
-
-To install those package open the terminal or command line and paste the code from below
+To install those package open the terminal or command line and paste the code from below:
 
 ```
 pip install -r requirements.txt

@@ -3,7 +3,7 @@
 **A Contactless Attendance System where your face is identified for Attendance.** :sparkles:
 
 
-![Contactless-Attendance-System](https://github.com/dhhruv/Contactless-Attendance-System/blob/master/Git%20Images/Contactless%20Attendance%20System%20Logo.png)
+![Contactless-Attendance-System](https://github.com/dhhruv/Git-Images/blob/master/Contactless%20Attendance%20System%20Logo.png)
 
 
 ![Made with Python](http://ForTheBadge.com/images/badges/made-with-python.svg)
@@ -29,9 +29,13 @@ We seek to provide a valuable attendance service for employees. Reduce manual pr
 
 ## Screenshots :camera:
 -----------------------------------
+### GUI
+
+![GUI](https://github.com/dhhruv/Git-Images/blob/master/GUI%20FRAS.PNG)
+
 ### Command Line Interface
 
-![Command Line Interface](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/CODE%20INTERFACE.png)
+![Command Line Interface](https://github.com/dhhruv/Git-Images/blob/master/Terminal%20FRAS.PNG)
 
 ### Checking Camera
 
@@ -40,7 +44,7 @@ We seek to provide a valuable attendance service for employees. Reduce manual pr
 
 ### Automail 
 
-![Automail](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/automail.jpg)
+![Automail](https://github.com/dhhruv/Git-Images/blob/master/Automail.jpeg)
 
 
 ## Tech Stack Used :computer:

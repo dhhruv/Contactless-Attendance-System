@@ -121,6 +121,6 @@ If you want to use it then follow the steps below:
 2. Import the project to your preferable IDE.
 Recommended : PyCharm
 3. Create a python virtual environment.
-4. Install all the packages from [requirements.txt]().
-5. Change the mail information in the [Info.py]().
+4. Install all the packages from [requirements.txt](https://github.com/dhhruv/Contactless-Attendance-System/blob/master/requirements.txt "requirements.txt").
+5. Change the mail information in the [Info.py](https://github.com/dhhruv/Contactless-Attendance-System/blob/master/Info.py "Info.py").
 6. Run the project using the Command Prompt or PowerShell or your IDE Terminal Button.

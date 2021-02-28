@@ -117,7 +117,7 @@ py main.py
 py main_gui.py
 ```
 
-![Test Run](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/code%20demo_edit_0.gif)
+![Test Run](https://github.com/dhhruv/Git-Images/blob/master/Video.mp4)
 
 ## How To Use? :pencil:
 ----------------------

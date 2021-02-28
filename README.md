@@ -128,3 +128,10 @@ Recommended : PyCharm
 4. Install all the packages from [requirements.txt](https://github.com/dhhruv/Contactless-Attendance-System/blob/master/requirements.txt "requirements.txt").
 5. Change the mail information in the [Info.py](https://github.com/dhhruv/Contactless-Attendance-System/blob/master/Info.py "Info.py").
 6. Run the project using the Command Prompt or PowerShell or your IDE Terminal Button.
+
+## Team :
+1. [Neel Shah](https://github.com/Neelshah997)
+2. [Dhruv Panchal](https://github.com/dhhruv)
+3. [Urvesh Patel](https://github.com/urvesh254)
+4. [Nirja Desai](https://github.com/nirami98)
+5. [Payal Devalia]()

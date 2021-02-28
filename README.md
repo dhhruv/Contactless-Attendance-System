@@ -13,11 +13,13 @@
 ![](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)
 
 
+
 ## Motivation :astonished:
 ----------------------------
 -	This Repository was created as a part of MINeD Hackathon, a national level hackathon organized by Centre of Excellence in Data Science at the CSE Department of Nirma University.
 
 -	We seek to provide a valuable attendance service for employees. Reduce manual process errors by provide automated and a reliable attendance system uses facial recognition technology.
+
 
 ## Features :clipboard:
 ---------------------------
@@ -26,6 +28,7 @@
 * Train Faces
 * Recognize Faces & Attendance
 * Automatic Email
+
 
 ## Screenshots :camera:
 -----------------------------------
@@ -48,6 +51,7 @@
 ### 5. Automail 
 
 ![Automail](https://github.com/dhhruv/Git-Images/blob/master/Automail.jpeg)
+
 
 
 ## Tech Stack Used :computer:
@@ -76,6 +80,7 @@
 * Jupyter Notebook
 * Git
 
+
 ## Installation :key:
 -----------------------------------
 
@@ -90,6 +95,8 @@ Then activate the virtual enviroment using the code below for windows.
 ```
 > Note: If your pc don't have virtual enviroment or pip install the follow this link. [How to create Virtual Enviroment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) 
 
+
+
 ### Installing the Packages
 --------------------------------------------------
 
@@ -102,6 +109,8 @@ pip install -r requirements.txt
 ```
 
 > Note: During the package installation, sometimes it shows errors due to package dependencies and to avoid those error you can install those packages as admin.
+
+
 
 ## Test Run :bicyclist:
 -----------------------
@@ -121,6 +130,8 @@ py main_gui.py
 
 ![Test Run](https://github.com/dhhruv/Git-Images/blob/master/demo.gif)
 
+
+
 ## How To Use? :pencil:
 ----------------------
 If you want to use it then follow the steps below:
@@ -132,6 +143,8 @@ Recommended : PyCharm
 4. Install all the packages from [requirements.txt](https://github.com/dhhruv/Contactless-Attendance-System/blob/master/requirements.txt "requirements.txt").
 5. Change the mail information in the [Info.py](https://github.com/dhhruv/Contactless-Attendance-System/blob/master/Info.py "Info.py").
 6. Run the project using the Command Prompt or PowerShell or your IDE Terminal Button.
+
+
 
 ## Team :
 ----------------------

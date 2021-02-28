@@ -117,7 +117,7 @@ py main.py
 py main_gui.py
 ```
 
-![Test Run](https://user-images.githubusercontent.com/55116730/109410250-156b4c80-79bf-11eb-8f6c-ad1699554a26.mp4)
+![Test Run](https://github.com/dhhruv/Git-Images/blob/master/demo.gif)
 
 ## How To Use? :pencil:
 ----------------------

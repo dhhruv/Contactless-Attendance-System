@@ -12,7 +12,7 @@ def recognize_attendence():
     recognizer.read("TrainingImageLabel"+os.sep+"Trainner.yml")
     harcascadePath = "haarcascade_frontalface_default.xml"
     faceCascade = cv2.CascadeClassifier(harcascadePath)
-    df = pd.read_csv("StudentDetails"+os.sep+"StudentDetails.csv")
+    df = pd.read_csv("EmployeeDetails"+os.sep+"EmployeeDetails.csv")
     font = cv2.FONT_HERSHEY_SIMPLEX
     col_names = ['Id', 'Name', 'Time']
     attendance = pd.DataFrame(columns=col_names)
@@ -25,8 +25,8 @@ def recognize_attendence():
     minW = 0.1 * cam.get(3)
     minH = 0.1 * cam.get(4)
 
+    minThreshold = 40 # Accurate minThresold = 67
     while True:
-        minThreshold = 55 # Accurate minThresold = 67
 
         ret, im = cam.read()
         gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)

@@ -30,7 +30,7 @@ def autom_call():
 	tkStatus.set("Sending Mail...")
 	status_label.update()
 	os.system("py automail.py")
-	tkStatus.set("Mail Sent...")
+	tkStatus.set("Mail Sent")
 	status_label.update()
 
 def autom():
@@ -59,7 +59,7 @@ def timages_call():
 	tkStatus.set("Training Images...")
 	status_label.update()
 	Train_Image.TrainImages()
-	tkStatus.set("Images Trained...")
+	tkStatus.set("Images Trained.")
 	status_label.update()
 
 def Trainimages():
@@ -74,7 +74,7 @@ def rfaces_call():
 	tkStatus.set("Recognizing Faces...")
 	status_label.update()
 	Recognize.recognize_attendence()
-	tkStatus.set("Faces Recognized...")
+	tkStatus.set("Faces Recognized.")
 	status_label.update()
 
 def RecognizeFaces():

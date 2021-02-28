@@ -79,7 +79,7 @@
 ## Installation :key:
 -----------------------------------
 
-#### - Create Environment 
+**- Create Environment** 
 First open the terminal or command line in the IDE and copy the following code.
 ```
 python -m venv venv

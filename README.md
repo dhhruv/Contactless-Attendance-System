@@ -39,7 +39,7 @@ We seek to provide a valuable attendance service for employees. Reduce manual pr
 
 ### Checking Camera
 
-![Checking Camera](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/Program%20working.jpg)
+![Checking Camera](https://github.com/dhhruv/Git-Images/blob/master/Check%20Camera.jpg)
 
 
 ### Automail 
@@ -99,7 +99,7 @@ To install those package open the terminal or command line and paste the code fr
 pip install -r requirements.txt
 ```
 
-> Note: During the package installation, sometimes it shows errors due to package dependencies and to avoid those error you can install those packages as admin.** 
+> Note: During the package installation, sometimes it shows errors due to package dependencies and to avoid those error you can install those packages as admin.
 
 ## Test Run :bicyclist:
 -----------------------

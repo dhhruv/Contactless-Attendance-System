@@ -117,6 +117,8 @@ py main.py
 py main_gui.py
 ```
 
+**Test Run for CAS as shown below:-**
+
 ![Test Run](https://github.com/dhhruv/Git-Images/blob/master/demo.gif)
 
 ## How To Use? :pencil:

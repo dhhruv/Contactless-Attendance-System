@@ -15,9 +15,9 @@
 
 ## Motivation :astonished:
 ----------------------------
-This Repository was created as a part of MINeD Hackathon, a national level hackathon organized by Centre of Excellence in Data Science at the CSE Department of Nirma University.
+-	This Repository was created as a part of MINeD Hackathon, a national level hackathon organized by Centre of Excellence in Data Science at the CSE Department of Nirma University.
 
-We seek to provide a valuable attendance service for employees. Reduce manual process errors by provide automated and a reliable attendance system uses facial recognition technology.
+-	We seek to provide a valuable attendance service for employees. Reduce manual process errors by provide automated and a reliable attendance system uses facial recognition technology.
 
 ## Features :clipboard:
 ---------------------------
@@ -29,23 +29,23 @@ We seek to provide a valuable attendance service for employees. Reduce manual pr
 
 ## Screenshots :camera:
 -----------------------------------
-### GUI
+### 1. GUI
 
 ![GUI](https://github.com/dhhruv/Git-Images/blob/master/GUI%20FRAS.PNG)
 
-### Command Line Interface
+### 2. Command Line Interface
 
 ![Command Line Interface](https://github.com/dhhruv/Git-Images/blob/master/Terminal%20FRAS.PNG)
 
-### Checking Camera
+### 3. Checking Camera
 
 ![Checking Camera](https://github.com/dhhruv/Git-Images/blob/master/Check%20Camera.jpg)
 
-### Recognize Image
+### 4. Recognize Image
 
 ![Recognizie Image](https://github.com/dhhruv/Git-Images/blob/master/Recognize%20Image.jpg)
 
-### Automail 
+### 5. Automail 
 
 ![Automail](https://github.com/dhhruv/Git-Images/blob/master/Automail.jpeg)
 

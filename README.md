@@ -130,6 +130,7 @@ Recommended : PyCharm
 6. Run the project using the Command Prompt or PowerShell or your IDE Terminal Button.
 
 ## Team :
+----------------------
 1. [Neel Shah](https://github.com/Neelshah997)
 2. [Dhruv Panchal](https://github.com/dhhruv)
 3. [Urvesh Patel](https://github.com/urvesh254)

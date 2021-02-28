@@ -1,4 +1,4 @@
-# Face Recognition Attandance System
+# Contactless-Attendance-System
 
 ### Recognize The faces And Take Automatic Attandance. :sparkles:
 
@@ -9,6 +9,7 @@
 
 ## Motivation :astonished:
 ----------------------------
+This Repository was created as a part of MINeD Hackathon, a national level hackathon organized by Centre of Excellence in Data Science at the CSE Department of Nirma University.
 We seek to provide a valuable attendance service for both teachers and students. Reduce manual process errors by provide automated and a reliable attendance system uses face recognition technology.
 
 ## Features :clipboard:
@@ -34,12 +35,12 @@ We seek to provide a valuable attendance service for both teachers and students.
 ![Automail](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/automail.jpg)
 
 
-## Tech Used :computer:
+## Tech Stack Used :computer:
 --------------------------
 Build With - 
-* Python 3.7
+* Python 3.8
 
-Module Used -
+Modules Used -
 
 All The Module are Latest Version.
 * OpenCV Contrib 4.0.1
@@ -50,14 +51,14 @@ All The Module are Latest Version.
 * CSV
 * yagmail
 
-
-Face Recognition Algorithms -
+Facial Recognition Algorithms -
 * Haar Cascade
 * LBPH (Local Binary Pattern Histogram)
 
-Software Used -
+Softwares Used -
 * Pycharm 2019.2
 * VS CODE 
+* Jupyter Notebook
 * Git
 
 ## Installation :key:
@@ -65,7 +66,7 @@ Software Used -
 
 #### Download or Clone the project
 
-First Download or Clone the Project on Your Local Machine.To download the project from github press **Download Zip**
+First Download or Clone the Project on Your Local Machine. To download the project from GitHub press **Download Zip**
 
 ![Download Zip](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Document%20Metarial/Project%20demo%20images/download%20zip.png)
 
@@ -84,11 +85,11 @@ After download, Open the project using **Pycharm or VSCODE**. Then we have to cr
 #### create enviroment 
 First open the terminal or command line in the IDE.Then write the following code.
 ```
-python -m venv env
+python -m venv venv
 ```
 Then activate the enviroment using the code below for windows.
 ```
-.\env\Scripts\activate
+.\venv\Scripts\activate
 ```
 [ *Notice:*
 If your pc don't have virtual enviroment or pip install the follow this link.
@@ -104,35 +105,23 @@ After creating the enviroment on your project let's install the necessary packag
 To install those package open the terminal or command line and paste the code from below
 
 ```
-pip install opencv-contrib-python
-```
-```
-pip install numpy
-```
-```
-pip install pandas
-```
-```
-pip install Pillow
-```
-```
-pip install pytest-shutil
-```
-```
-pip install python-csv
-```
-```
-pip install yagmail
+pip install -r requirements.txt
 ```
 
-[ **Notice: During the package installization, sometime it shows some error, to avoid those error you can install those packages as admin. ]
+[ **Note: During the package installation, sometimes it shows errors due to package dependencies and to avoid those error you can install those packages as admin.** ]
 
 ## Test Run :bicyclist:
 -----------------------
-After creating the enviroment and installing the packages, open the IDE terminal/command line to run the program. Using the code below.
+After creating the virtual environment and installing the packages, open the IDE terminal to run the program.
+1. To use Command Line Version Use:
 
 ```
 py main.py
+```
+2. To use GUI Version Use:
+
+```
+py main_gui.py
 ```
 Here is a demo to run the program. I'm Using the Pycharm IDE in my demo.
 
@@ -140,33 +129,12 @@ Here is a demo to run the program. I'm Using the Pycharm IDE in my demo.
 
 ## How To Use? :pencil:
 ----------------------
-If you want to use it just follow the steps below.
+If you want to use it then follow the steps below:
 
-1. First download or clone the project
-2. Import the project to your favourit IDE
-3. Create an python enviroment
-4. Install all the packages 
-5. Change the mail information
-6. Run the project using the command line or your IDE Run Button
-
-## Known Bugs :bug:
-------------------------------
-This project have some bugs.
-
-* Student Details: In student details folder the **StudentDetails.csv** file don't have ID & name column.This problem show when the program run first time and create the **StudentDetails.csv** file automatically. To soleve the problelm just open the file and add *ID & Name Column* in the file and save it.
-
-* Auto Attachment: This is not a problem actually. The problem is before sent auto mail we have to manually change the file name. I tried to automate the attachment but i faild.
-
-## Contribute :heart:
---------------------------------------
-If you want to contribute in this project feel free to do that. A [contribution guideline](https://github.com/kmhmubin/Face-Recognition-Attendance-System/blob/master/Contributing%20Guidelines.md) will be a big help.
-
-Thanks you [Ciroiriarte](https://github.com/ciroiriarte) for contributing.
-
-## Credits :sparkling_heart:
---------------------------------
-Thanks to [Farhat Tasnim](https://github.com/farhattasnim) work with me.
-
-## Licence :scroll:
----------------------------------
-MIT © [K.M.H. Mubin](https://github.com/kmhmubin)
+1. First download or clone the repository.
+2. Import the project to your preferable IDE.
+Recommended : PyCharm
+3. Create a python virtual environment.
+4. Install all the packages from [requirements.txt]().
+5. Change the mail information in the [Info.py]().
+6. Run the project using the Command Prompt or PowerShell or your IDE Terminal Button.

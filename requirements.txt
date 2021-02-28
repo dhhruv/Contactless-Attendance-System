@@ -12,6 +12,8 @@ opencv-contrib-python
 pandas==0.25.1
 Pillow==6.2.0
 pyparsing==2.4.2
+pytest-shutil
+python-csv
 python-dateutil==2.8.0
 pytz==2019.2
 six==1.12.0

@@ -1,5 +1,5 @@
 import csv
-
+import re
 import cv2
 import os
 #from main_gui import tkEmail, tkID, tkName
@@ -36,7 +36,8 @@ def takeImages(Id,name,email):
     #email = str(tkEmail)
     print(Id,name,email)
     
-    if(is_number(Id) ):
+    regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
+    if(is_number(Id) and re.search(regex,email)):
         cam = cv2.VideoCapture(0)
         harcascadePath = "haarcascade_frontalface_default.xml"
         detector = cv2.CascadeClassifier(harcascadePath)
@@ -71,6 +72,8 @@ def takeImages(Id,name,email):
             writer.writerow(row)
         csvFile.close()
     else:
-        if(is_number(Id)):
+        if(isnumeric(Id)==False):
             print("Enter Alphabetical Name")
         
+        else:
+            print("Enter correct email address")

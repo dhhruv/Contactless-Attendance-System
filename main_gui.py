@@ -42,17 +42,26 @@ def autom():
 # calling the take image function form capture image.py file
 
 def cfaces_call():
-	tkStatus.set("Capturing Faces...")
-	status_label.update()
-	Capture_Image.takeImages(str(tkID.get()),str(tkName.get()),str(tkEmail.get()))
-	tkStatus.set("Faces Captured...")
-	status_label.update()
-	tkID.set("")
-	id_label.update()
-	tkName.set("")
-	name_label.update()
-	tkEmail.set("")
-	email_label.update()
+    tkStatus.set("Capturing Faces...")
+    status_label.update()
+    try:
+        Capture_Image.takeImages(str(tkID.get()),str(tkName.get()),str(tkEmail.get()))
+        tkStatus.set("Faces Captured")
+        status_label.update()
+        tkID.set("")
+        id_label.update()
+        tkName.set("")
+        name_label.update()
+        tkEmail.set("")
+        email_label.update()
+    except Exception as e:
+        if (tkID.get().isnumeric()==False):
+            tkStatus.set("Enter valid user id")
+            status_label.update()
+        else:
+            tkStatus.set("Enter valid user email")
+            status_label.update()
+
 
 def CaptureFaces():
 	t2=threading.Thread(target=cfaces_call,daemon=True)

@@ -9,8 +9,6 @@ date = datetime.date.today().strftime("%B %d, %Y")
 path = 'Attendance'
 os.chdir(path)
 files = sorted(os.listdir(os.getcwd()), key=os.path.getmtime)
-# receiver = 'neelcshah1012@gmail.com'
-# receiver = 'payaldevalia1111@gmail.com'
 df = pd.read_csv(r'EmployeeDetails\EmployeeDetails.csv')   
         
 receivers = df["email"]

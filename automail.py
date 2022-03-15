@@ -18,7 +18,6 @@ sub = "Attendance Report for " + str(date)
 body = " Attendance Submitted."
 
 for receiver in receivers:
-    # receiver = 'nirjadesai9800@gmail.com'
     # mail information
     if pd.isnull(reciver):
         continue

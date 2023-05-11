@@ -2,22 +2,21 @@ import csv
 import re
 import cv2
 import os
-#from main_gui import tkEmail, tkID, tkName
+from unicodedata import numeric
 
 
-# counting the numbers
-
-
-def is_number(s):
+def is_number(value):
+    """
+    Function to check if a value is numeric.
+    """
     try:
-        float(s)
+        float(value)
         return True
     except ValueError:
         pass
 
     try:
-        import unicodedata
-        unicodedata.numeric(s)
+        numeric(value)
         return True
     except (TypeError, ValueError):
         pass
@@ -25,55 +24,63 @@ def is_number(s):
     return False
 
 
+def validate_email(email):
+    """
+    Function to validate an email using regex.
+    """
+    regex = "^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$"
+    return re.search(regex, email)
 
-# Take image function
 
-def takeImages(Id,name,email):
+def save_image(Id, name, email, gray, x, y, w, h):
+    """
+    Function to save image and data.
+    """
+    cv2.imwrite(
+        f"TrainingImage/{name}.{Id}.{sampleNum}.jpg", gray[y : y + h, x : x + w]
+    )
+    with open("EmployeeDetails/EmployeeDetails.csv", "a+") as csvFile:
+        writer = csv.writer(csvFile)
+        writer.writerow([Id, name, email])
 
 
-    #Id = str(tkID)
-    #name = str(tkName)
-    #email = str(tkEmail)
-    print(Id,name,email)
-    
-    regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
-    if(is_number(Id) and re.search(regex,email)):
-        cam = cv2.VideoCapture(0)
-        harcascadePath = "haarcascade_frontalface_default.xml"
-        detector = cv2.CascadeClassifier(harcascadePath)
-        sampleNum = 0
+def capture_images(Id, name, email):
+    """
+    Function to capture images.
+    """
+    cam = cv2.VideoCapture(0)
+    detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+    sampleNum = 0
 
-        while(True):
-            ret, img = cam.read()
-            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-            faces = detector.detectMultiScale(gray, 1.3, 5, minSize=(30,30),flags = cv2.CASCADE_SCALE_IMAGE)
-            for(x,y,w,h) in faces:
-                cv2.rectangle(img, (x, y), (x+w, y+h), (10, 159, 255), 2)
-                #incrementing sample number
-                sampleNum = sampleNum+1
-                #saving the captured face in the dataset folder TrainingImage
-                cv2.imwrite("TrainingImage" + os.sep +name + "."+Id + '.' +
-                            str(sampleNum) + ".jpg", gray[y:y+h, x:x+w])
-                #display the frame
-                cv2.imshow('frame', img)
-            #wait for 100 miliseconds
-            if cv2.waitKey(100) & 0xFF == ord('q'):
-                break
-            # break if the sample number is more than 100
-            elif sampleNum > 100:
-                break
-        cam.release()
-        cv2.destroyAllWindows()
-        temp=''.join(list(i for i in name.split()))
-        res = "Images Saved for ID : " + Id + " Name : " + temp + "Email :" + email 
-        row = [Id, name,email]
-        with open("EmployeeDetails"+os.sep+"EmployeeDetails.csv", 'a+') as csvFile:
-            writer = csv.writer(csvFile)
-            writer.writerow(row)
-        csvFile.close()
+    while True:
+        ret, img = cam.read()
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        faces = detector.detectMultiScale(
+            gray, 1.3, 5, minSize=(30, 30), flags=cv2.CASCADE_SCALE_IMAGE
+        )
+        for x, y, w, h in faces:
+            cv2.rectangle(img, (x, y), (x + w, y + h), (10, 159, 255), 2)
+            sampleNum += 1
+            save_image(Id, name, email, gray, x, y, w, h)
+            cv2.imshow("frame", img)
+        if cv2.waitKey(100) & 0xFF == ord("q") or sampleNum > 100:
+            break
+
+    cam.release()
+    cv2.destroyAllWindows()
+
+
+def takeImages(Id, name, email):
+    """
+    Main function to validate data and start image capturing process.
+    """
+    if is_number(Id) and validate_email(email):
+        capture_images(Id, name, email)
+        print(
+            f"Images Saved for ID : {Id} Name : {name.replace(' ', '')} Email : {email}"
+        )
     else:
-        if(isnumeric(Id)==False):
+        if not is_number(Id):
             print("Enter Alphabetical Name")
-        
         else:
             print("Enter correct email address")

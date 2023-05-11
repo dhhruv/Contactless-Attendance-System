@@ -1,44 +1,49 @@
-import sys 
-import subprocess 
-import os
-# importing urllib.requests for internet cheking funtions 
-import urllib.request 
-  
-# To check if the system is connected to the internet
-def connect(host='https://google.com/'):
-    try: 
-        urllib.request.urlopen(host) 
+import subprocess
+import urllib.request
+
+
+def check_internet(host="https://google.com"):
+    """
+    Function to check if the system is connected to the Internet.
+    """
+    try:
+        urllib.request.urlopen(host)
         return True
-    # trying to catch exception when internet is not ON. 
-    except: 
+    except:
         return False
 
-def setup_a(module_name): 
-  
-    # updating pip to latest version 
-    subprocess.run('python -m pip install --upgrade pip') 
-  
-    # commanding terminal to pip install required modules
-    p = subprocess.run('python3 -m pip3 install '+module_name) 
-    
-    # Not connected to the internet
-    if(p.returncode == 1 and connect() == False): 
-        print("Error!! occured check\nInternet Conection.") 
-  
-    # Every thing worked fine 
-    elif(p.returncode == 0): 
-        print(module_name, " is installed successfully.") 
-  
-    # Name of module is wrong 
-    elif(p.returncode == 1 and connect() == True): 
-        print("Error!! occured check\nModule Name.") 
 
-print('Installing')
-print('Please wait....')
-print('Do not close this program')
-with open('requirements.txt') as file:
-    data = file.readlines()
-    for line in data:
-        setup_a(line)
-print('Installation finished')
-subprocess.run('python3 main.py')#to run the main file
+def setup_module(module_name):
+    """
+    Function to install the required python module.
+    """
+    # updating pip to latest version
+    subprocess.run("python -m pip install --upgrade pip")
+
+    # install required modules
+    process = subprocess.run(["python3", "-m", "pip", "install", module_name])
+
+    if process.returncode != 0:
+        if not check_internet():
+            print("Error!! Occurred check\nInternet Connection.")
+        else:
+            print("Error!! Occurred check\nModule Name.")
+    else:
+        print(f"{module_name} is installed successfully.")
+
+
+def install_required_modules():
+    print("Installing")
+    print("Please wait....")
+    print("Do not close this program")
+
+    with open("requirements.txt") as file:
+        for line in file:
+            setup_module(line.strip())
+
+    print("Installation finished")
+    subprocess.run(["python3", "main.py"])
+
+
+if __name__ == "__main__":
+    install_required_modules()

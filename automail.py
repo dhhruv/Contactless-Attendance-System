@@ -1,34 +1,36 @@
-import yagmail
 import os
 import datetime
-import Info
+import yagmail
 import pandas as pd
-import numpy as np
+from Info import EMAIL_ID, PASSWORD
 
-date = datetime.date.today().strftime("%B %d, %Y")
-path = 'Attendance'
-os.chdir(path)
-files = sorted(os.listdir(os.getcwd()), key=os.path.getmtime)
-df = pd.read_csv(r'EmployeeDetails\EmployeeDetails.csv')   
-        
-receivers = df["email"]
-newest = files[-1]
-filename = newest
-sub = "Attendance Report for " + str(date)
-body = " Attendance Submitted."
 
-for receiver in receivers:
-    # mail information
-    if pd.isnull(reciver):
-        continue
-    else:
-        yag = yagmail.SMTP(Info.EMAIL_ID, Info.PASSWORD)
+def send_email(receiver, subject, body, filename):
+    yag = yagmail.SMTP(EMAIL_ID, PASSWORD)
 
-        # sent the mail
-        yag.send(
-            to=receiver,
-            subject=sub, # email subject
-            contents=body,  # email body
-            attachments= filename  # file attached
-        )
-        print("Email Sent to "+reciver)
+    yag.send(to=receiver, subject=subject, contents=body, attachments=filename)
+    print(f"Email Sent to {receiver}")
+
+
+def main():
+    date = datetime.date.today().strftime("%B %d, %Y")
+    path = "Attendance"
+    os.chdir(path)
+    files = sorted(os.listdir(), key=os.path.getmtime)
+
+    df = pd.read_csv(r"EmployeeDetails\EmployeeDetails.csv")
+    receivers = df["email"]
+
+    newest_file = files[-1]
+    subject = "Attendance Report for " + date
+    body = "Attendance Submitted."
+
+    for receiver in receivers:
+        if pd.isnull(receiver):
+            continue
+        else:
+            send_email(receiver, subject, body, newest_file)
+
+
+if __name__ == "__main__":
+    main()
